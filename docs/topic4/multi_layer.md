@@ -38,7 +38,7 @@
 ### 启动
 
 ```javascript
-//multi_layer为组件的vue对象，innerGraphs和outerLinks为数据
+//multi_layer为组件MultiLayer.vue的vue实例，innerGraphs和outerLinks为数据
 multi_layer.setData(innerGraphs,outerLinks)
 multi_layer.draw()
 ```
@@ -99,7 +99,7 @@ async setInitLayout(){//下层节点多于上层节点的情况
 
 + 接口名称：`exportChosenData`
 + 交互描述：鼠标圈选点或者清空，各层处于圈选状态的点的id会向外发送
-+ 数据格式：`array`类型的数据。数组的每一个元素也是一个`array`，对应各层处于圈选状态的id
++ 数据格式：`array`类型的数据，满足json格式。数组的每一个元素也是一个`array`，对应各层处于圈选状态的id
 
 ::: details 样例
 
@@ -112,6 +112,8 @@ async setInitLayout(){//下层节点多于上层节点的情况
 ```
 
 :::
+
+如何绑定接口请详见章节[使用示例](#使用示例)
 
 ### 接收
 
@@ -422,10 +424,22 @@ async setInitLayout(){
 }
 ```
 
+绑定接口：
+
+```html
+<Multilayer @exportChosenData="handleExportChosenData"><!--Multilayer为多层网络组件-->
+```
+
+```javascript
+function handleExportChosenData(data){//exportChosenData的处理函数，data为接口传输的数据
+	...
+}
+```
+
 然后开始绘图：
 
 ```javascript
-const component = this.$refs['MultiLayer'];//这里的component指的是组件的vue实例，采取合理的方法获取即可
+const component = this.$refs['MultiLayer'];//这里的component指的是组件MultiLayer.vue的vue实例，采取合理的方法获取即可
 
 component.setData(innerGraphs,outerLinks)
 component.draw()

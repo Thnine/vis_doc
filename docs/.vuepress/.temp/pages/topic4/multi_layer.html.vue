@@ -53,7 +53,7 @@ multi_layer<span class="token punctuation">.</span><span class="token function">
 <ul>
 <li>接口名称：<code v-pre>exportChosenData</code></li>
 <li>交互描述：鼠标圈选点或者清空，各层处于圈选状态的点的id会向外发送</li>
-<li>数据格式：<code v-pre>array</code>类型的数据。数组的每一个元素也是一个<code v-pre>array</code>，对应各层处于圈选状态的id</li>
+<li>数据格式：<code v-pre>array</code>类型的数据，满足json格式。数组的每一个元素也是一个<code v-pre>array</code>，对应各层处于圈选状态的id</li>
 </ul>
 <details class="custom-container details"><summary>样例</summary>
 <div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token punctuation">[</span>
@@ -62,6 +62,7 @@ multi_layer<span class="token punctuation">.</span><span class="token function">
     <span class="token punctuation">[</span>'id_204'<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token comment">//第2层被选中的点</span>
 <span class="token punctuation">]</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></details>
+<p>如何绑定接口请详见章节<a href="#%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B">使用示例</a></p>
 <h3 id="接收" tabindex="-1"><a class="header-anchor" href="#接收" aria-hidden="true">#</a> 接收</h3>
 <p>暂无接口</p>
 <h2 id="使用示例" tabindex="-1"><a class="header-anchor" href="#使用示例" aria-hidden="true">#</a> 使用示例</h2>
@@ -351,7 +352,12 @@ multi_layer<span class="token punctuation">.</span><span class="token function">
 <span class="token keyword">async</span> <span class="token function">setInitLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
 	<span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getWangZixiaoLayout_upper_less</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>innerGraphs<span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>outerLinks<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>然后开始绘图：</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>绑定接口：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><pre v-pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Multilayer</span> <span class="token attr-name">@exportChosenData</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>handleExportChosenData<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token comment">&lt;!--Multilayer为多层网络组件--></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">handleExportChosenData</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">//exportChosenData的处理函数，data为接口传输的数据</span>
+	<span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>然后开始绘图：</p>
 <div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> component <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'MultiLayer'</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//这里的component指的是组件的vue实例，采取合理的方法获取即可</span>
 
 component<span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span>innerGraphs<span class="token punctuation">,</span>outerLinks<span class="token punctuation">)</span>

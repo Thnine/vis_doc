@@ -3,8 +3,10 @@ export const pagesData = {
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"F:/CodeWorkSpace/vis_doc/docs/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
   // path: /topic3/
   "v-261db6b2": () => import(/* webpackChunkName: "v-261db6b2" */"F:/CodeWorkSpace/vis_doc/docs/.vuepress/.temp/pages/topic3/index.html.js").then(({ data }) => data),
-  // path: /topic4/multilayer.html
-  "v-863db5a0": () => import(/* webpackChunkName: "v-863db5a0" */"F:/CodeWorkSpace/vis_doc/docs/.vuepress/.temp/pages/topic4/multilayer.html.js").then(({ data }) => data),
+  // path: /topic4/feature_contour.html
+  "v-49f69d8e": () => import(/* webpackChunkName: "v-49f69d8e" */"F:/CodeWorkSpace/vis_doc/docs/.vuepress/.temp/pages/topic4/feature_contour.html.js").then(({ data }) => data),
+  // path: /topic4/multi_layer.html
+  "v-71c58482": () => import(/* webpackChunkName: "v-71c58482" */"F:/CodeWorkSpace/vis_doc/docs/.vuepress/.temp/pages/topic4/multi_layer.html.js").then(({ data }) => data),
   // path: /topic4/
   "v-261db6d1": () => import(/* webpackChunkName: "v-261db6d1" */"F:/CodeWorkSpace/vis_doc/docs/.vuepress/.temp/pages/topic4/index.html.js").then(({ data }) => data),
   // path: /404.html

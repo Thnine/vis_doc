@@ -8,6 +8,8 @@ export default defineUserConfig({
   description: '可视化组件文档-中南大学',
   theme: defaultTheme({ //主题
     logo:'/logo.svg',
+    contributors:false,
+    lastUpdatedText:'最后一次更新',
     sidebar:[
         {
             text:'课题三',
@@ -23,8 +25,12 @@ export default defineUserConfig({
             collapsible:false,
             children:[
                 {
-                    text:'多层网络可视组件',
-                    link:'/topic4/multilayer.md',
+                    text:'多层网络',
+                    link:'/topic4/multi_layer.md',
+                },
+                {
+                    text:'特征等高线',
+                    link:'/topic4/feature_contour.md',
                 },
             ]
         }

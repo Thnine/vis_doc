@@ -14,7 +14,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "特征等高线",
+    "title": "特征等高线增强的多维数据投影视图可视设计",
     "headers": [
       {
         "level": 2,
@@ -80,7 +80,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "多层网络",
+    "title": "基于多层网络的2.5D可视化",
     "headers": [
       {
         "level": 2,

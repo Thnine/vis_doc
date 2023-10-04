@@ -1,4 +1,4 @@
-<template><div><h1 id="多层网络" tabindex="-1"><a class="header-anchor" href="#多层网络" aria-hidden="true">#</a> 多层网络</h1>
+<template><div><h1 id="基于多层网络的2-5d可视化" tabindex="-1"><a class="header-anchor" href="#基于多层网络的2-5d可视化" aria-hidden="true">#</a> 基于多层网络的2.5D可视化</h1>
 <p>本组件能够将多层图数据以多个2.5D节点连接图平面的形式可视化，并呈现平面之间的节点连接关系。</p>
 <p>针对各个平面上节点连接图的布局，本组件集成了两种布局算法：力导引布局算法，增强多层网络心理地图保持效果的力引导布局算法[1]。选择合适的布局算法，能够更好的呈现多层图数据的潜在模式。</p>
 <div align="center"><img src="/topic4/multi_layer/imgs/comp_consist.png"></div>
@@ -16,7 +16,7 @@
 <p>数据的样例请详见章节<a href="#%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B">使用示例</a></p>
 <h2 id="如何使用" tabindex="-1"><a class="header-anchor" href="#如何使用" aria-hidden="true">#</a> 如何使用</h2>
 <h3 id="启动" tabindex="-1"><a class="header-anchor" href="#启动" aria-hidden="true">#</a> 启动</h3>
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token comment">//multi_layer为组件的vue对象，innerGraphs和outerLinks为数据</span>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token comment">//multi_layer为组件MultiLayer.vue的vue实例，innerGraphs和outerLinks为数据</span>
 multi_layer<span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span>innerGraphs<span class="token punctuation">,</span>outerLinks<span class="token punctuation">)</span>
 multi_layer<span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="布局" tabindex="-1"><a class="header-anchor" href="#布局" aria-hidden="true">#</a> 布局</h3>
@@ -358,7 +358,7 @@ multi_layer<span class="token punctuation">.</span><span class="token function">
 	<span class="token operator">...</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>然后开始绘图：</p>
-<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> component <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'MultiLayer'</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//这里的component指的是组件的vue实例，采取合理的方法获取即可</span>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> component <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token string">'MultiLayer'</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//这里的component指的是组件MultiLayer.vue的vue实例，采取合理的方法获取即可</span>
 
 component<span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span>innerGraphs<span class="token punctuation">,</span>outerLinks<span class="token punctuation">)</span>
 component<span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span>

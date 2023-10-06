@@ -25,21 +25,25 @@ export default defineUserConfig({
             collapsible:false,
             children:[
                 {
-                    text:'多层网络',
+                    text:'基于多层网络的2.5D可视化',
                     link:'/topic4/multi_layer.md',
                 },
                 {
-                    text:'特征等高线',
+                    text:'特征等高线增强的多维数据投影视图可视设计',
                     link:'/topic4/feature_contour.md',
                 },
                 {
-                  text:'面向信息流构建的网络通联行为可视化方法',
-                  link:'/topic4/mes_flow.md',
-              },
-              {
-                text:'动态弦图',
-                link:'/topic4/dynamicparallel.md',
-            },
+                    text:'面向信息流构建的网络通联行为可视化方法',
+                    link:'/topic4/mes_flow.md',
+                },
+                {
+                    text:'面向二部图结构演化的动态弦图',
+                    link:'/topic4/dynamicparallel.md',
+                },
+                {
+                    text:'社群节点迁移气泡图可视设计方法',
+                    link:'/topic4/bubble_chart.md',
+                },
             ]
         }
     ]

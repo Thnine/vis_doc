@@ -4,12 +4,15 @@
 
    ```
    yarn install
+   或
+   npm install
    ```
 
 2. 启动项目
 
    ```
    yarn docs:dev
+   npm run docs:dev
    ```
 
 3. 进入http://localhost:8088/

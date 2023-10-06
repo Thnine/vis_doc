@@ -36,6 +36,10 @@ export default defineUserConfig({
                   text:'面向信息流构建的网络通联行为可视化方法',
                   link:'/topic4/mes_flow.md',
               },
+              {
+                text:'动态弦图',
+                link:'/topic4/dynamicparallel.md',
+            },
             ]
         }
     ]

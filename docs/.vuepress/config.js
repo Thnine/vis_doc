@@ -32,6 +32,10 @@ export default defineUserConfig({
                     text:'特征等高线',
                     link:'/topic4/feature_contour.md',
                 },
+                {
+                  text:'面向信息流构建的网络通联行为可视化方法',
+                  link:'/topic4/mes_flow.md',
+              },
             ]
         }
     ]

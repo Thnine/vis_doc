@@ -72,7 +72,7 @@ this.handleMockData("data");
 
 在本示例中，使用的数据为：
 
-::: 模拟数据
+::: details 模拟数据
 
 ```json
 {
@@ -3436,6 +3436,8 @@ this.handleMockData("data");
   ]
 }
 ```
+
+:::
 
 开始绘图：
 

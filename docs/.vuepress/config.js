@@ -29,12 +29,12 @@ export default defineUserConfig({
                     link:'/topic4/multi_layer.md',
                 },
                 {
-                    text:"节点属性雷达图可视设计方法",
-                    link:'/topic4/radviz.md',
-                },
-                {
                     text:'特征等高线增强的多维数据投影视图可视设计',
                     link:'/topic4/feature_contour.md',
+                },
+                {
+                    text:"节点属性雷达图可视设计方法",
+                    link:'/topic4/radviz.md',
                 },
                 {
                     text:'面向信息流构建的网络通联行为可视化方法',

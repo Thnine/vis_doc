@@ -15,6 +15,8 @@ export const pagesComponents = {
   "v-4929bbd6": defineAsyncComponent(() => import(/* webpackChunkName: "v-4929bbd6" */"F:/CodeWorkspace/vis_doc/docs/.vuepress/.temp/pages/topic4/mes_flow.html.vue")),
   // path: /topic4/multi_layer.html
   "v-71c58482": defineAsyncComponent(() => import(/* webpackChunkName: "v-71c58482" */"F:/CodeWorkspace/vis_doc/docs/.vuepress/.temp/pages/topic4/multi_layer.html.vue")),
+  // path: /topic4/radviz.html
+  "v-ce364e94": defineAsyncComponent(() => import(/* webpackChunkName: "v-ce364e94" */"F:/CodeWorkspace/vis_doc/docs/.vuepress/.temp/pages/topic4/radviz.html.vue")),
   // path: /topic4/
   "v-261db6d1": defineAsyncComponent(() => import(/* webpackChunkName: "v-261db6d1" */"F:/CodeWorkspace/vis_doc/docs/.vuepress/.temp/pages/topic4/index.html.vue")),
   // path: /404.html

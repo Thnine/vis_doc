@@ -60,4 +60,4 @@
             ]
 ```
 可视化效果为
-<div align="center"><img src="/topic4/imgs/radviz1.jpg"></div>
+<div align="center"><img src="./imgs/radviz1.jpg"></div>

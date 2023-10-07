@@ -26,7 +26,11 @@
 
 ## 如何使用
 ### 启动
-
+```c
+//this为组件radviz.vue的vue实例，data为数据,queryIns和card不用管
+this.initRadviz();
+this.setDataSource(data, queryIns, card)
+```
 ### 交互
 此组件包含两个交互。
 

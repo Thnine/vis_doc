@@ -12,7 +12,7 @@ export default defineUserConfig({
     lastUpdatedText:'最后一次更新',
     sidebar:[
         {
-            text:'课题三',
+            text:'可视化',
             link:'/topic3/',
             collapsible:false,
             children:[
@@ -20,7 +20,7 @@ export default defineUserConfig({
             ],
         },
         {
-            text:'课题四',
+            text:'交互',
             link:'/topic4/README.md',
             collapsible:false,
             children:[

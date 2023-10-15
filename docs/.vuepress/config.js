@@ -13,7 +13,7 @@ export default defineUserConfig({
     sidebar:[
         {
             text:'可视化',
-            link:'/topic3/',
+            // link:'/topic3/',
             collapsible:false,
             children:[
 
@@ -21,7 +21,7 @@ export default defineUserConfig({
         },
         {
             text:'交互',
-            link:'/topic4/README.md',
+            // link:'/topic4/README.md',
             collapsible:false,
             children:[
                 {
